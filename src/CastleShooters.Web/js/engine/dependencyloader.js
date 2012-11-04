@@ -23,6 +23,8 @@ Pyramid.newDependency({
 Pyramid.newDependency({
     name: 'engine',
     files: [
+        'js/libs/blackbird.js',
+        'js/engine/utils/messenger.js',
         'js/engine/core/core.js'
     ],
     dependencies: ['main']

@@ -14,7 +14,7 @@
     <RootNamespace>CastleShooters.Web</RootNamespace>
     <AssemblyName>CastleShooters.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -62,11 +62,16 @@
     <Content Include="index.html" />
     <Content Include="js\engine\core\core.js" />
     <Content Include="js\engine\dependencyloader.js" />
+    <Content Include="js\engine\utils\messenger.js" />
+    <Content Include="js\libs\blackbird.js" />
     <Content Include="js\libs\propulsionjs.js" />
     <Content Include="js\libs\pyramid-1.0.1.js" />
     <Content Include="js\physics\castle.js" />
     <Content Include="js\physics\game.js" />
     <Content Include="js\physics\settings.js" />
+    <Content Include="style\packages\blackbird\blackbird.css" />
+    <Content Include="style\packages\blackbird\blackbird_icons.png" />
+    <Content Include="style\packages\blackbird\blackbird_panel.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -93,9 +98,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>2823</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1494/</IISUrl>
+          <IISUrl>http://localhost/CastleShooters.Web</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -96,6 +96,9 @@ DocProject/Help/html
 # Click-Once directory
 publish
 
+#Resharper
+_ReSharper*
+
 # Others
 [Bb]in
 [Oo]bj

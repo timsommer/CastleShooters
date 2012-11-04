@@ -47,11 +47,11 @@ T4T.GameEngine = (function(){
 
         this.Sprite = Sprite;
 
-        this.addObj = function (g){
+        this.addObj = function(g) {
             _objects.push(g);
-        }
+        };
 
-        this.init = function(width, height, contentdiv, framerate){
+        this.init = function(width, height, contentdiv, framerate) {
             _Canvas = document.createElement('canvas');
             _Canvas.id = "game";
             _Canvas.height = _Height = height;
@@ -60,22 +60,22 @@ T4T.GameEngine = (function(){
 
             document.getElementById(contentdiv).appendChild(_Canvas);
 
-            init('game',width,height);
+            init('game', width, height);
             _FrameRate = loop.rate = framerate;
 
-            load(function(){
+            load(function() {
 
             });
 
-            rm.play = function(){
-              /*var ballCreator = new Alarm(function(){
-                  var ball = obj.ball;
-                  loop.beget(ball);
-                  this.time = loop.rate * .5;
-              });
-                ballCreator.time = 0;*/
-               //loop.register(obj.ball, 0, 0);
-                for(var i = 0; i < _objects.length; i++){
+            rm.play = function() {
+                /*var ballCreator = new Alarm(function(){
+                    var ball = obj.ball;
+                    loop.beget(ball);
+                    this.time = loop.rate * .5;
+                });
+                  ballCreator.time = 0;*/
+                //loop.register(obj.ball, 0, 0);
+                for (var i = 0; i < _objects.length; i++) {
                     loop.register(_objects[i], 0, 0);
                 }
             };
@@ -83,7 +83,7 @@ T4T.GameEngine = (function(){
             loop.active = true;
             loop.room = rm.play;
 
-        }
+        };
 
     };
 

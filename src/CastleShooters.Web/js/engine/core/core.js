@@ -51,6 +51,8 @@ T4T.GameEngine = (function(){
             _objects.push(g);
         };
 
+        this.physics = physics;
+
         this.init = function(width, height, contentdiv, framerate) {
             _Canvas = document.createElement('canvas');
             _Canvas.id = "game";

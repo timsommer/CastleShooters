@@ -34,6 +34,9 @@ Pyramid.newDependency({
     name:'physics',
     files: [
         'js/physics/settings.js',
+        'js/physics/utilities.js',
+        'js/physics/cannonBall.js',
+        'js/physics/powerBar.js',
         'js/physics/castle.js',
         'js/physics/game.js'
     ],

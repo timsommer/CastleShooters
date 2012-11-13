@@ -13,5 +13,6 @@
     var _Engine = T4T.GameEngine.GetInstance();
     _Engine.addObj(_instance.obj.castle);
     _Engine.addObj(_instance.obj.powerBar);
+   _Engine.addObj(_instance.obj.cannonBall);
     _Engine.init(1050,1000, "content", 10);
 })();

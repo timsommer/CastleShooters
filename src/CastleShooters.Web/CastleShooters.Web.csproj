@@ -66,9 +66,12 @@
     <Content Include="js\libs\blackbird.js" />
     <Content Include="js\libs\propulsionjs.js" />
     <Content Include="js\libs\pyramid-1.0.1.js" />
+    <Content Include="js\physics\cannonBall.js" />
     <Content Include="js\physics\castle.js" />
     <Content Include="js\physics\game.js" />
+    <Content Include="js\physics\powerBar.js" />
     <Content Include="js\physics\settings.js" />
+    <Content Include="js\physics\utilities.js" />
     <Content Include="style\packages\blackbird\blackbird.css" />
     <Content Include="style\packages\blackbird\blackbird_icons.png" />
     <Content Include="style\packages\blackbird\blackbird_panel.png" />
